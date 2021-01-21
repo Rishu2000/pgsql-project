@@ -4,7 +4,8 @@ const knex = require("knex")({
   connection: 'postgres://postgres:pgsql_rishav@localhost:5432/pgsql-project-db'
 });
 knex('user')
-  .where({ name: "Rishu3" })
+  .where({ id:7 })
+  .update({ age:22 })
   .then(rows =>{
-    console.log("Selected.")
+    console.log("Updated.")
   });
