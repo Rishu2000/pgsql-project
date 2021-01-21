@@ -9,5 +9,5 @@ knex.schema.createTable('user', (table) => {
   table.integer('age')
 })
 .then(() => {
-  console.log("require");
+  console.log("Created a table name 'user'.");
 });
